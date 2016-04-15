@@ -1,0 +1,224 @@
+body {
+	margin: 20px auto;
+	padding: 0;
+	width: 580px;
+	font: 80%/120% Arial, Helvetica, sans-serif;
+}
+a {
+	font-weight: bold;
+	color: #000000;
+}
+#box {
+	background-image: url(025.png);
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+
+#boxone {
+	background-image: url(007.png);
+	margin-top: 15px;
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+
+#boxtwo {
+	background-image: url(004.jpg);
+	margin-top: 30px;
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+
+h1{
+	font-family: verdana, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	color: rgb(51,51,51);
+}
+
+/* Animation Styles */
+.container {
+	position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* Head Styles */
+.head { 
+	margin: 100px auto 0 auto; 
+	width: 150px; 
+	height: 150px; 
+	background: pink; 
+	border-radius: 100% 100% 100% 100%; 
+}
+
+.ear { 
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid pink;
+    position: relative;
+    top: -50px;
+}
+
+.left { 
+	float: left; 
+}
+.right { 
+	float: right; 
+}
+
+.eye { 
+	background: rgb(0,131,161); 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 100% 100% 100% 100%; 
+	position: relative; 
+	top: -30px; 
+}
+
+.left.eye{ 
+	position: relative; 
+	left: 20px; 
+	top: -70px;
+}
+.right.eye{ 
+	position: relative; 
+	left: 75px; 
+	top: -110px;
+}
+
+.inner-eye { 
+	background: #fff; 
+	width: 18px; 
+	height: 18px; 
+	border-radius: 100% 100% 100% 100%; 
+}
+
+
+.left.slant-ear { 
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 86.6px 50px;
+	border-color: transparent transparent #ffc0cb transparent;
+	position: relative;
+    top: -20px;
+	left: -40px;
+	transform: rotate(-45deg);
+}
+
+.right.slant-ear { 
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 86.6px 50px;
+	border-color: transparent transparent #ffc0cb transparent;
+	position: relative;
+    top: -100px;
+	left: 45px;
+	transform: rotate(50deg);
+}
+
+.left.inner-ear{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 19.5px 33.8px 19.5px;
+	border-color: transparent transparent #333333 transparent;
+	position: relative;
+	z-index: 2500px;
+	top: 0px;
+	left: -115px;
+	transform: rotate(-45deg);
+}
+
+.right.inner-ear{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 19.5px 33.8px 19.5px;
+	border-color: transparent transparent #333333 transparent;
+	position: relative;
+	z-index: 2500px;
+	top: -82px;
+	left: 125px;
+	transform: rotate(50deg);
+}
+
+.curl {
+    position: relative;
+    left: 70px;
+    top: -30px;
+    z-index: 2000;
+    width: 40px;
+    height: 80px;
+    background: rgb(255, 176, 190);
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
+    transform: rotate(75deg);
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.ball {
+    position: relative;
+    left: 50px;
+    top: -80px;
+    z-index: 1500;
+    width: 45px;
+    height: 45px;
+    border-radius: 200px;
+    background: rgb(255, 176, 190);
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+.mouth { 
+	width: 45px; 
+	height: 20px; 
+	border-bottom: 1px solid black; 
+	border-radius: 100% 100% 100% 100%; 
+	position: relative; 
+	left: 50px; 
+	top: -20px; 
+}
